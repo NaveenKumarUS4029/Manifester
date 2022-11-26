@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ContactUs">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:rowCount="3"
+            app:columnCount="2"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="0dp"
+            android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:padding="30dp"
+            app:srcCompat="@drawable/googlemaps"
+            app:layout_row="0"
+            app:layout_column="0"/>
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:paddingBottom="20dp"
+            android:padding="30dp"
+            app:srcCompat="@drawable/facebook"
+            app:layout_row="0"
+            app:layout_column="1"/>
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:padding="15dp"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/urbanpro"
+            app:layout_row="1"
+            app:layout_column="0"/>
+
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:padding="5dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/whatsapp"
+            app:layout_row="1"
+            app:layout_column="1"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:padding="5dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/instagram"
+            app:layout_row="1"
+            app:layout_column="1"/>
+
+        </androidx.gridlayout.widget.GridLayout>
+
+      </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

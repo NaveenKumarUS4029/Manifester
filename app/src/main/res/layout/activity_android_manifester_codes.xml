@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".topic.AndroidManifesterCodes">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#C5E1A5">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/abril_fatface"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="AndroidManifester "
+            android:letterSpacing=".1"
+            android:textColor="@color/purple_500"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/abril_fatface"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="#000"
+            android:textStyle="italic"
+            android:text="List of topics taught in the \nAndroid course\n\n ( Everything is hands on training )\n"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+            android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#C5E1A5">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview_codes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/androidmanifesterlogo"
+                tools:listitem="@layout/rc_android_manifester_item" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
