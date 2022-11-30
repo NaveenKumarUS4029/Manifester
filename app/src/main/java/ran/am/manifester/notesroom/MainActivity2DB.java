@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import ran.am.manifester.R;
 
 
-public class MainActivity2 extends AppCompatActivity {
+public class MainActivity2DB extends AppCompatActivity {
 
     Task singletask;
     EditText e,f,g;
